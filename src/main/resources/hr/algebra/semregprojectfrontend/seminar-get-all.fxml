@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="hr.algebra.semregprojectfrontend.controller.SeminarController">
+    <VBox spacing="10" alignment="CENTER">
+        <TableView fx:id="seminarTable" prefWidth="400">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="topicColumn" text="Topic" />
+                <TableColumn fx:id="lecturerColumn" text="Lecturer" />
+            </columns>
+        </TableView>
+        <Button text="Učitaj seminare" onAction="#loadSeminars" />
+    </VBox>
+</StackPane>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="History">
+    <option name="requestHistoryStates">
+      <list>
+        <requestHistoryState>
+          <option name="dateTime" value="1745231105807" />
+          <option name="id" value="a543287a-bf6f-4094-acc3-1e4e1dc4d9d8" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="755814fd-1c9d-4dad-9d81-4d5bd87d0be0" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8081/api/students" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="W3siaWQiOjEsIm5hbWUiOiJBbmEgS292YcSNIiwiZW1haWwiOiJhbmEua292YWNAZXhhbXBsZS5jb20ifSx7ImlkIjoyLCJuYW1lIjoiTWFya28gSG9ydmF0IiwiZW1haWwiOiJtYXJrby5ob3J2YXRAZXhhbXBsZS5jb20ifV0=" />
+              <option name="bodyString" value="[&#10;  {&#10;    &quot;id&quot;: 1,&#10;    &quot;name&quot;: &quot;Ana Kovač&quot;,&#10;    &quot;email&quot;: &quot;ana.kovac@example.com&quot;&#10;  },&#10;  {&#10;    &quot;id&quot;: 2,&#10;    &quot;name&quot;: &quot;Marko Horvat&quot;,&#10;    &quot;email&quot;: &quot;marko.horvat@example.com&quot;&#10;  }&#10;]" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="32" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 21 Apr 2025 10:25:05 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="a543287a-bf6f-4094-acc3-1e4e1dc4d9d8" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="[{&quot;id&quot;:1,&quot;name&quot;:&quot;Ana Kovač&quot;,&quot;email&quot;:&quot;ana.kovac@example.com&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Marko Horvat&quot;,&quot;email&quot;:&quot;marko.horvat@example.com&quot;}]" />
+              <option name="size" value="128" />
+              <option name="time" value="39" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1745263621203" />
+          <option name="id" value="740b63fa-5428-4054-b0c6-02fdff4a4604" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="755814fd-1c9d-4dad-9d81-4d5bd87d0be0" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8081/api/seminars/by-topic/Java Development" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJ0aW1lc3RhbXAiOiIyMDI1LTA0LTIxVDE5OjI3OjAxLjIwMSswMDowMCIsInN0YXR1cyI6NDA0LCJlcnJvciI6Ik5vdCBGb3VuZCIsIm1lc3NhZ2UiOiJObyBzdGF0aWMgcmVzb3VyY2UgYXBpL3NlbWluYXJzL2J5LXRvcGljL0phdmElMjBEZXZlbG9wbWVudC4iLCJwYXRoIjoiL2FwaS9zZW1pbmFycy9ieS10b3BpYy9KYXZhJTIwRGV2ZWxvcG1lbnQifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;timestamp&quot;: &quot;2025-04-21T19:27:01.201+00:00&quot;,&#10;  &quot;status&quot;: 404,&#10;  &quot;error&quot;: &quot;Not Found&quot;,&#10;  &quot;message&quot;: &quot;No static resource api/seminars/by-topic/Java%20Development.&quot;,&#10;  &quot;path&quot;: &quot;/api/seminars/by-topic/Java%20Development&quot;&#10;}" />
+              <option name="code" value="404" />
+              <option name="connectionEstablishingTime" value="23" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Origin" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Method" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Vary" />
+                    <option name="value" value="Access-Control-Request-Headers" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 21 Apr 2025 19:27:01 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="740b63fa-5428-4054-b0c6-02fdff4a4604" />
+              <option name="message" value="Not Found" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;timestamp&quot;:&quot;2025-04-21T19:27:01.201+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No static resource api/seminars/by-topic/Java%20Development.&quot;,&quot;path&quot;:&quot;/api/seminars/by-topic/Java%20Development&quot;}" />
+              <option name="size" value="202" />
+              <option name="time" value="29" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1745263632535" />
+          <option name="id" value="b530f602-1508-449b-9e98-31ea1b1fa7e3" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="755814fd-1c9d-4dad-9d81-4d5bd87d0be0" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8081/api/seminars/Java Development" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJpZCI6MSwidG9waWMiOiJKYXZhIERldmVsb3BtZW50IiwibGVjdHVyZXIiOiJJdmFuYSBQZXRyb3ZpxIcifQ==" />
+              <option name="bodyString" value="{&#10;  &quot;id&quot;: 1,&#10;  &quot;topic&quot;: &quot;Java Development&quot;,&#10;  &quot;lecturer&quot;: &quot;Ivana Petrović&quot;&#10;}" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="1" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 21 Apr 2025 19:27:12 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="b530f602-1508-449b-9e98-31ea1b1fa7e3" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;id&quot;:1,&quot;topic&quot;:&quot;Java Development&quot;,&quot;lecturer&quot;:&quot;Ivana Petrović&quot;}" />
+              <option name="size" value="64" />
+              <option name="time" value="39" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+      </list>
+    </option>
+  </component>
+</project>

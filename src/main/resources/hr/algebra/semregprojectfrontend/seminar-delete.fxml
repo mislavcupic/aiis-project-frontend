@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="hr.algebra.semregprojectfrontend.controller.SeminarController" spacing="10" alignment="CENTER">
+    <!-- Title for the window -->
+    <Label text="Delete Seminar" />
+
+    <!-- Input Field for ID -->
+    <Label text="Seminar ID:" />
+    <TextField fx:id="idField" promptText="Enter Seminar ID" />
+
+    <!-- Button to delete the seminar -->
+    <Button text="Delete Seminar" onAction="#handleDeleteById" />
+</VBox>

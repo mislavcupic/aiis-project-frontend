@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="hr.algebra.semregprojectfrontend.controller.SeminarController">
+    <TextField fx:id="topicSearchField" promptText="Unesi topic" />
+    <Button text="Traži po topicu" onAction="#handleFetchByTopic" />
+    <TextField fx:id="idField" promptText="ID" editable="false" />
+    <TextField fx:id="topicField" promptText="Topic" />
+    <TextField fx:id="lecturerField" promptText="Lecturer" />
+</VBox>
