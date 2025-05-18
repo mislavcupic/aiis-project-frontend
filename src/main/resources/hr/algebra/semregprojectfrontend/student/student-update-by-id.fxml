@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="hr.algebra.semregprojectfrontend.controller.StudentController">
+    <TextField fx:id="studentIdField" promptText="Student ID" />
+    <TextField fx:id="studentNameField" promptText="Student name" />
+    <TextField fx:id="studentEmailField" promptText="Student email" />
+    <Button text="Update Student" onAction="#handleUpdate" />
+</VBox>

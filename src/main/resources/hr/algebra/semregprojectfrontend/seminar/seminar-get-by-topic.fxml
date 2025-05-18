@@ -6,6 +6,6 @@
     <TextField fx:id="topicSearchField" promptText="Unesi topic" />
     <Button text="Traži po topicu" onAction="#handleFetchByTopic" />
     <TextField fx:id="idField" promptText="ID" editable="false" />
-    <TextField fx:id="topicField" promptText="Topic" />
-    <TextField fx:id="lecturerField" promptText="Lecturer" />
+    <TextField fx:id="topicField" promptText="Topic" editable="false" />
+    <TextField fx:id="lecturerField" promptText="Lecturer" editable="false" />
 </VBox>

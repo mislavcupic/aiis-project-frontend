@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="hr.algebra.semregprojectfrontend.controller.RegistrationController" spacing="10" alignment="CENTER">
+    <Label text="Find Registrations by Seminar ID" />
+    <Label text="Seminar ID:" />
+    <TextField fx:id="seminarIdField" promptText="Enter Seminar ID" />
+    <Button text="Load Registrations" onAction="#loadRegistrationsBySeminar" />
+    <TableView fx:id="registrationTable" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" />
+            <TableColumn fx:id="studentNameColumn" text="Student Name" />
+            <TableColumn fx:id="seminarTopicColumn" text="Seminar Topic" />
+            <TableColumn fx:id="registeredAtColumn" text="Registered At" />
+        </columns>
+    </TableView>
+</VBox>

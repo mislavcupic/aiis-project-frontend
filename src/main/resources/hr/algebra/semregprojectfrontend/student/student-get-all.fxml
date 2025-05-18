@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="hr.algebra.semregprojectfrontend.controller.StudentController">
+    <VBox spacing="10" alignment="CENTER">
+        <TableView fx:id="studentTable" prefWidth="400">
+            <columns>
+                <TableColumn fx:id="studentIdColumn" text="ID" />
+                <TableColumn fx:id="studentNameColumn" text="StudentName" />
+                <TableColumn fx:id="studentEmailColumn" text="StudentEmail" />
+            </columns>
+        </TableView>
+        <Button text="Load Students" onAction="#loadStudents" />
+    </VBox>
+</StackPane>

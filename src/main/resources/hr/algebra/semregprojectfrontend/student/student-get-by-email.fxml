@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="hr.algebra.semregprojectfrontend.controller.StudentController">
+    <TextField fx:id="emailSearchField" promptText="Enter student's email" />
+    <Button text="Search by student's email" onAction="#handleFetchByEmail" />
+    <TextField fx:id="studentIdField" promptText="StudentId" editable="false" />
+    <TextField fx:id="studentNameField" promptText="StudentName" editable="false" />
+    <TextField fx:id="studentEmailField" promptText="StudentEmail" editable="false" />
+</VBox>
+

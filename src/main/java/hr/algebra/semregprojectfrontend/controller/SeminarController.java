@@ -50,21 +50,22 @@ public class SeminarController {
     private RestTemplate createRestTemplate() {
         RestTemplate restTemplate = new RestTemplate();
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
-        converter.setSupportedMediaTypes(List.of(MediaType.ALL));
+        converter.setSupportedMediaTypes(List.of(MediaType.APPLICATION_JSON));
         restTemplate.getMessageConverters().add(converter);
         return restTemplate;
     }
 
     // Navigacija po view-ima
-    @FXML public void handleGetAll() { loadView("seminar-get-all.fxml"); }
-    @FXML public void handleGetByTopic() { loadView("seminar-get-by-topic.fxml"); }
-    @FXML public void handlePost() { loadView("seminar-post.fxml"); }
-    @FXML public void handlePut() { loadView("seminar-put.fxml"); }
-    @FXML public void handleDelete() { loadView("seminar-delete.fxml"); }
+    @FXML public void handleGetAllSeminars() { loadView("seminar-get-all.fxml"); }
+    @FXML public void handleGetSeminarByTopic() { loadView("seminar-get-by-topic.fxml"); }
+    @FXML public void handleCreateNewSeminar() { loadView("seminar-post.fxml"); }
+    @FXML public void handleUpdateSeminar() { loadView("seminar-put.fxml"); }
+    @FXML public void handleDeleteSeminar() { loadView("seminar-delete.fxml"); }
+
 
     private void loadView(String fxmlPath) {
         try {
-            Parent view = FXMLLoader.load(getClass().getResource("/hr/algebra/semregprojectfrontend/" + fxmlPath));
+            Parent view = FXMLLoader.load(getClass().getResource("/hr/algebra/semregprojectfrontend/seminar/" + fxmlPath));
             contentPane.getChildren().setAll(view);
         } catch (IOException e) {
             showAlert("Error while trying to get scene view: " + e.getMessage());
@@ -94,13 +95,13 @@ public class SeminarController {
         try {
             Seminar seminar = restTemplate.getForObject(BASE_URL  + "/"+ topic, Seminar.class);
 
-                if (seminar != null) {
-                    idField.setText(String.valueOf(seminar.getId()));
-                    topicField.setText(seminar.getTopic());
-                    lecturerField.setText(seminar.getLecturer());
-                } else {
-                    showAlert("Seminar with entered topic not found.");
-                }
+            if (seminar != null) {
+                idField.setText(String.valueOf(seminar.getId()));
+                topicField.setText(seminar.getTopic());
+                lecturerField.setText(seminar.getLecturer());
+            } else {
+                showAlert("Seminar with entered topic not found.");
+            }
 
 
         } catch (Exception e) {
@@ -138,7 +139,11 @@ public class SeminarController {
         try {
             Long id = Long.parseLong(idField.getText());
             Seminar updated = new Seminar(id, topicField.getText(), lecturerField.getText());
-            restTemplate.put(BASE_URL + "/" + id, updated);
+
+            // Konstruiraj URL s ID-jem kao query parametrom
+            String updateUrl = BASE_URL + "?id=" + id;
+
+            restTemplate.put(updateUrl, updated);
             showAlert("Seminar updated.");
         } catch (Exception e) {
             showAlert("Updating not successful: " + e.getMessage());

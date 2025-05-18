@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="hr.algebra.semregprojectfrontend.controller.StudentController">
+
+    <top>
+        <MenuBar>
+            <Menu text="Student endpoints">
+                <MenuItem text="Get all students" onAction="#handleGetAllStudents"/>
+                <MenuItem text="Get students by email" onAction="#handleGetStudentByEmail"/>
+                <MenuItem text="Create new student" onAction="#handleCreateNewStudent"/>
+                <MenuItem text="Update student by ID" onAction="#handleUpdateStudent"/>
+                <MenuItem text="Delete student by ID" onAction="#handleDeleteStudent"/>
+
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <StackPane fx:id="contentPane" />
+    </center>
+
+</BorderPane>
