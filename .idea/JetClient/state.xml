@@ -9,7 +9,7 @@
               <option name="id" value="755814fd-1c9d-4dad-9d81-4d5bd87d0be0" />
               <option name="method" value="GET" />
               <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:8081/api/seminars/Java Development" />
+              <option name="url" value="http://localhost:8081/api/seminars" />
             </requestState>
           </list>
         </option>

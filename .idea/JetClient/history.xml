@@ -171,6 +171,58 @@
           </option>
           <option name="workspaceId" value="drafts" />
         </requestHistoryState>
+        <requestHistoryState>
+          <option name="dateTime" value="1747986595772" />
+          <option name="id" value="2ad28d05-67a0-4be5-a919-dab933ac940f" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="755814fd-1c9d-4dad-9d81-4d5bd87d0be0" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:8081/api/seminars" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="W3siaWQiOjEsInRvcGljIjoiTyBrYWtvIHR1xb5uaWggbGp1YmF2aSBpbWEgMzMzLi4uIiwibGVjdHVyZXIiOiJQcm9mZXNvciBMdWtpxIcifV0=" />
+              <option name="bodyString" value="[&#10;  {&#10;    &quot;id&quot;: 1,&#10;    &quot;topic&quot;: &quot;O kako tužnih ljubavi ima 333...&quot;,&#10;    &quot;lecturer&quot;: &quot;Profesor Lukić&quot;&#10;  }&#10;]" />
+              <option name="code" value="200" />
+              <option name="connectionEstablishingTime" value="30" />
+              <option name="contentType" value="application/json" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Transfer-Encoding" />
+                    <option name="value" value="chunked" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Fri, 23 May 2025 07:49:55 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=60" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="2ad28d05-67a0-4be5-a919-dab933ac940f" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="[{&quot;id&quot;:1,&quot;topic&quot;:&quot;O kako tužnih ljubavi ima 333...&quot;,&quot;lecturer&quot;:&quot;Profesor Lukić&quot;}]" />
+              <option name="size" value="83" />
+              <option name="time" value="107" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
       </list>
     </option>
   </component>
